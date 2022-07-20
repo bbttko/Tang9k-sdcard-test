@@ -1,0 +1,46 @@
+//Copyright (C)2014-2022 Gowin Semiconductor Corporation.
+//All rights reserved. 
+//File Title: Physical Constraints file
+//GOWIN Version: 1.9.8.05
+//Part Number: GW1NR-LV9QN88PC6/I5
+//Device: GW1NR-9C
+//Created Time: Sat 06 25 18:04:42 2022
+
+IO_LOC "uart_tx" 17;
+IO_PORT "uart_tx" PULL_MODE=UP DRIVE=8;
+IO_LOC "uart_rx" 18;
+IO_PORT "uart_rx" PULL_MODE=UP;
+IO_LOC "SD_nCS" 38;
+IO_PORT "SD_nCS" PULL_MODE=UP DRIVE=8;
+IO_LOC "SD_DCLK" 36;
+IO_PORT "SD_DCLK" PULL_MODE=UP DRIVE=8;
+IO_LOC "SD_MOSI" 37;
+IO_PORT "SD_MOSI" PULL_MODE=UP DRIVE=8;
+//IO_LOC "led0_b" 13;
+//IO_PORT "led0_b" PULL_MODE=UP DRIVE=8;
+//IO_LOC "led0_g" 11;
+//IO_PORT "led0_g" PULL_MODE=UP DRIVE=8;
+//IO_LOC "led0_r" 10;
+//IO_PORT "led0_r" PULL_MODE=UP DRIVE=8;
+IO_LOC "SD_MISO" 39;
+IO_PORT "SD_MISO" PULL_MODE=UP;
+IO_LOC "button" 3;
+IO_PORT "button" PULL_MODE=UP;
+IO_LOC "rstn" 4;
+IO_PORT "rstn" PULL_MODE=UP;
+IO_LOC "clk" 52;
+IO_PORT "clk" PULL_MODE=UP;
+
+// leds
+IO_LOC "LEDS[6]" 16;
+IO_PORT "LEDS[6]" PULL_MODE=UP DRIVE=8;
+IO_LOC "LEDS[5]" 15;
+IO_PORT "LEDS[5]" PULL_MODE=UP DRIVE=8;
+IO_LOC "LEDS[4]" 14;
+IO_PORT "LEDS[4]" PULL_MODE=UP DRIVE=8;
+IO_LOC "LEDS[3]" 13;
+IO_PORT "LEDS[3]" PULL_MODE=UP DRIVE=8;
+IO_LOC "LEDS[2]" 11;
+IO_PORT "LEDS[2]" PULL_MODE=UP DRIVE=8;
+IO_LOC "LEDS[1]" 10;
+IO_PORT "LEDS[1]" PULL_MODE=UP DRIVE=8;

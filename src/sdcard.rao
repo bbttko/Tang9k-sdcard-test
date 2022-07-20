@@ -1,0 +1,144 @@
+<?xml version="1" encoding="UTF-8"?>
+<GAO_CONFIG>
+    <Version>3.0</Version>
+    <Mode>Standard</Mode>
+    <AoCore index="0" sample_clock="clk" trig_type="0" storage_depth="4096" window_num="1" capture_amount="4096" trigger_pos="200" module_name="top" force_trigger_by_falling_edge="false">
+        <SignalList>
+            <Signal>button_db</Signal>
+            <Signal>ready</Signal>
+            <Bus name="state[2:0]">
+                <Signal>state[2]</Signal>
+                <Signal>state[1]</Signal>
+                <Signal>state[0]</Signal>
+            </Bus>
+            <Bus name="counter[9:0]">
+                <Signal>counter[9]</Signal>
+                <Signal>counter[8]</Signal>
+                <Signal>counter[7]</Signal>
+                <Signal>counter[6]</Signal>
+                <Signal>counter[5]</Signal>
+                <Signal>counter[4]</Signal>
+                <Signal>counter[3]</Signal>
+                <Signal>counter[2]</Signal>
+                <Signal>counter[1]</Signal>
+                <Signal>counter[0]</Signal>
+            </Bus>
+            <Bus name="wdata[7:0]">
+                <Signal>wdata[7]</Signal>
+                <Signal>wdata[6]</Signal>
+                <Signal>wdata[5]</Signal>
+                <Signal>wdata[4]</Signal>
+                <Signal>wdata[3]</Signal>
+                <Signal>wdata[2]</Signal>
+                <Signal>wdata[1]</Signal>
+                <Signal>wdata[0]</Signal>
+            </Bus>
+            <Signal>wrena</Signal>
+            <Bus name="sdcard/state_q[3:0]">
+                <Signal>sdcard/state_q[3]</Signal>
+                <Signal>sdcard/state_q[2]</Signal>
+                <Signal>sdcard/state_q[1]</Signal>
+                <Signal>sdcard/state_q[0]</Signal>
+            </Bus>
+            <Bus name="sdcard/counter_q[9:0]">
+                <Signal>sdcard/counter_q[9]</Signal>
+                <Signal>sdcard/counter_q[8]</Signal>
+                <Signal>sdcard/counter_q[7]</Signal>
+                <Signal>sdcard/counter_q[6]</Signal>
+                <Signal>sdcard/counter_q[5]</Signal>
+                <Signal>sdcard/counter_q[4]</Signal>
+                <Signal>sdcard/counter_q[3]</Signal>
+                <Signal>sdcard/counter_q[2]</Signal>
+                <Signal>sdcard/counter_q[1]</Signal>
+                <Signal>sdcard/counter_q[0]</Signal>
+            </Bus>
+            <Bus name="sdcard/wr_data[7:0]">
+                <Signal>sdcard/wr_data[7]</Signal>
+                <Signal>sdcard/wr_data[6]</Signal>
+                <Signal>sdcard/wr_data[5]</Signal>
+                <Signal>sdcard/wr_data[4]</Signal>
+                <Signal>sdcard/wr_data[3]</Signal>
+                <Signal>sdcard/wr_data[2]</Signal>
+                <Signal>sdcard/wr_data[1]</Signal>
+                <Signal>sdcard/wr_data[0]</Signal>
+            </Bus>
+            <Signal>sdcard/wr</Signal>
+        </SignalList>
+        <Triggers>
+            <Trigger index="0">
+                <SignalList>
+                    <Signal>button_db</Signal>
+                </SignalList>
+            </Trigger>
+            <Trigger index="1">
+                <SignalList>
+                    <Bus restorename="sdcard/counter_q[9:0]">
+                        <Signal>sdcard/counter_q[9]</Signal>
+                        <Signal>sdcard/counter_q[8]</Signal>
+                        <Signal>sdcard/counter_q[7]</Signal>
+                        <Signal>sdcard/counter_q[6]</Signal>
+                        <Signal>sdcard/counter_q[5]</Signal>
+                        <Signal>sdcard/counter_q[4]</Signal>
+                        <Signal>sdcard/counter_q[3]</Signal>
+                        <Signal>sdcard/counter_q[2]</Signal>
+                        <Signal>sdcard/counter_q[1]</Signal>
+                        <Signal>sdcard/counter_q[0]</Signal>
+                    </Bus>
+                </SignalList>
+            </Trigger>
+            <Trigger index="2">
+                <SignalList>
+                    <Bus restorename="sdcard/state_q[3:0]">
+                        <Signal>sdcard/state_q[3]</Signal>
+                        <Signal>sdcard/state_q[2]</Signal>
+                        <Signal>sdcard/state_q[1]</Signal>
+                        <Signal>sdcard/state_q[0]</Signal>
+                    </Bus>
+                </SignalList>
+            </Trigger>
+            <Trigger index="3">
+                <SignalList>
+                    <Bus restorename="state[2:0]">
+                        <Signal>state[2]</Signal>
+                        <Signal>state[1]</Signal>
+                        <Signal>state[0]</Signal>
+                    </Bus>
+                </SignalList>
+            </Trigger>
+            <Trigger index="4"/>
+            <Trigger index="5"/>
+            <Trigger index="6"/>
+            <Trigger index="7"/>
+            <Trigger index="8"/>
+            <Trigger index="9"/>
+            <Trigger index="10"/>
+            <Trigger index="11"/>
+            <Trigger index="12"/>
+            <Trigger index="13"/>
+            <Trigger index="14"/>
+            <Trigger index="15"/>
+        </Triggers>
+        <MatchUnits>
+            <MatchUnit index="0" enabled="1" match_type="1" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="R" value1="0" trigger="0"/>
+            <MatchUnit index="1" enabled="1" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="0000000011" value1="0000000000" trigger="1"/>
+            <MatchUnit index="2" enabled="1" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="1010" value1="0000" trigger="2"/>
+            <MatchUnit index="3" enabled="1" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="001" value1="000" trigger="3"/>
+            <MatchUnit index="4" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="5" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="6" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="7" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="8" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="9" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="10" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="11" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="12" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="13" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="14" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="15" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+        </MatchUnits>
+        <Expressions type="Static">
+            <Expression>M1&amp;M2</Expression>
+        </Expressions>
+    </AoCore>
+    <GAO_ID>0010100110111000</GAO_ID>
+</GAO_CONFIG>
