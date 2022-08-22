@@ -5,18 +5,11 @@
     <Version>5</Version>
     <Device name="GW1NR-9C" pn="GW1NR-LV9QN88PC6/I5">gw1nr9c-004</Device>
     <FileList>
-        <File path="src/baud_generator.v" type="file.verilog" enable="0"/>
-        <File path="src/debounce_explicit.v" type="file.verilog" enable="1"/>
-        <File path="src/fifo.v" type="file.verilog" enable="0"/>
-        <File path="src/sdcard_interface.v" type="file.verilog" enable="1"/>
-        <File path="src/spi.v" type="file.verilog" enable="1"/>
-        <File path="src/top.v" type="file.verilog" enable="1"/>
-        <File path="src/uart.v" type="file.verilog" enable="0"/>
-        <File path="src/uart_rx.v" type="file.verilog" enable="0"/>
-        <File path="src/uart_tx.v" type="file.verilog" enable="0"/>
+        <File path="src/top_xess.v" type="file.verilog" enable="1"/>
+        <File path="src/SDCard.vhd" type="file.vhdl" enable="1"/>
         <File path="src/uart_rx.vhd" type="file.vhdl" enable="1"/>
         <File path="src/uart_tx.vhd" type="file.vhdl" enable="1"/>
-        <File path="src/sdcard_interface.cst" type="file.cst" enable="1"/>
-        <File path="src/sdcard.rao" type="file.gao" enable="1"/>
+        <File path="src/pins.cst" type="file.cst" enable="1"/>
+        <File path="src/xess.rao" type="file.gao" enable="1"/>
     </FileList>
 </Project>
